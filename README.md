@@ -32,16 +32,14 @@ cd auth
 ### 3. Configure the Application
 #### Database Configuration
 
-spring.datasource.url=jdbc:mysql://localhost:3306/your_db_name
-
-spring.datasource.username=your_db_username
-
-spring.datasource.password=your_db_password
+- spring.datasource.url=jdbc:mysql://localhost:3306/your_db_name
+- spring.datasource.username=your_db_username
+- spring.datasource.password=your_db_password
 
 #### JWT Configuration
 
-jwt.secret=your-very-long-secret-key   
-jwt.expiration=3600000
+- jwt.secret=your-very-long-secret-key   
+- jwt.expiration=3600000
 
 ### 4. Build the project:
 ```bash
@@ -60,13 +58,13 @@ mvn spring-boot:run
 #### Swagger-ui
 
 ```bash
-  GET /swagger-ui/index.html
+GET /swagger-ui/index.html
 ```
 
 #### User Sign Up
 
 ```bash
-  POST /auth/register
+POST /auth/register
 ```
 
 | Parameter | Type |
@@ -78,7 +76,7 @@ mvn spring-boot:run
 #### User Sign In
 
 ```bash
-  POST /auth/login
+POST /auth/login
 ```
 
 | Parameter  | Type     | 
@@ -95,7 +93,7 @@ mvn spring-boot:run
 #### Access a Protected Resource
 
 ```bash
-  GET /user
-  Authorization: Bearer your-jwt-token
+GET /user
+Authorization: Bearer your-jwt-token
 ```
 
