@@ -57,13 +57,13 @@ mvn spring-boot:run
 
 #### Swagger-ui
 
-```http
+```bash
   GET /swagger-ui/index.html
 ```
 
 #### User Sign Up
 
-```http
+```bash
   POST /auth/register
 ```
 
@@ -75,7 +75,7 @@ mvn spring-boot:run
 
 #### User Sign In
 
-```http
+```bash
   POST /auth/login
 ```
 
